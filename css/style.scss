@@ -6,6 +6,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400&display=swap&subset=cyrillic-ext');
 @import '_null';
 
+html {
+  font-size: 16px;
+}
 body {
   line-height: 1;
   font-family: 'Open Sans', sans-serif;
@@ -14,6 +17,8 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   overflow: hidden;
 }
@@ -27,6 +32,7 @@ body {
 .header {
 }
 .main {
+  flex: 1 1 auto;
 }
 .offer {
   background: url('../assets/mainpage/offer/burning-man.jpg') 50% 0 / cover
@@ -48,7 +54,6 @@ body {
     color: #ffffff;
     font-family: 'Anton', sans-serif;
     font-size: 30px;
-    font-weight: 400;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     &:not(:last-child) {
@@ -62,7 +67,6 @@ body {
     color: rgb(255, 255, 255);
     font-family: 'Anton', sans-serif;
     font-size: 100px;
-    font-weight: 400;
     text-transform: uppercase;
     &:not(:last-child) {
       margin-bottom: 44px;
@@ -84,5 +88,30 @@ body {
     padding: 20px 49px 19px 49px;
   }
 }
+
+.about {
+  // .about__container
+
+  &__container {
+  }
+
+  // .about__content
+
+  &__content {
+    padding: 113px 0px 113px 0px;
+  }
+
+  // .about__title
+
+  &__title {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    &:not(:last-child) {
+      margin-bottom: 56px;
+    }
+  }
+}
+
 .footer {
 }
