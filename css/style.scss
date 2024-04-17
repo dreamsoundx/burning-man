@@ -35,8 +35,7 @@ body {
   flex: 1 1 auto;
 }
 .offer {
-  background: url('../assets/mainpage/offer/burning-man.jpg') 50% 0 / cover
-    no-repeat;
+  background: url('../assets/offer/burning-man.jpg') 50% 0 / cover no-repeat;
   // .offer_container
 
   &__container {
@@ -109,6 +108,52 @@ body {
     text-transform: uppercase;
     &:not(:last-child) {
       margin-bottom: 56px;
+    }
+  }
+  .about {
+    // .about__items
+
+    &__items {
+    }
+
+    // .about__item
+
+    &__item {
+    }
+  }
+  .item-about {
+    // .item-about__body
+
+    &__body {
+    }
+
+    // .item-about__title
+
+    &__title {
+    }
+
+    // .item-about__text
+
+    &__text {
+    }
+
+    // .item-about__photos
+
+    &__photos {
+    }
+
+    // .item-about__photo
+
+    &__photo {
+      // .item-about__photo_big
+
+      &_big {
+      }
+    }
+
+    // .item-about__image
+
+    &__image {
     }
   }
 }
