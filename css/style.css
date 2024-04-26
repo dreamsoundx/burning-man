@@ -131,8 +131,45 @@ body {
 .about__title:not(:last-child) {
   margin-bottom: 56px;
 }
+.about .about__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 30px;
+  margin: 0px -15px;
+}
+.about .about__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  padding: 0px 15px;
+}
 .about .item-about__title {
   font-family: "Anton", sans-serif;
   font-size: 25px;
   text-transform: uppercase;
+}
+.about .item-about__text {
+  line-height: 163%;
+  text-align: justify;
+}
+.about .item-about__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 30px;
+  margin: 0px -15px;
+}
+.about .item-about__photo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  padding: 0px 15px;
+}
+.about .item-about__image {
+  max-width: 100%;
 }

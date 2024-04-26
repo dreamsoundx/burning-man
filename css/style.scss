@@ -113,11 +113,17 @@ body {
     // .about__items
 
     &__items {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 30px;
+      margin: 0px -15px;
     }
 
     // .about__item
 
     &__item {
+      flex: 1 1 50%;
+      padding: 0px 15px;
     }
   }
   .item-about {
@@ -137,18 +143,25 @@ body {
     // .item-about__text
 
     &__text {
+      line-height: 163%;
+      text-align: justify;
     }
 
     // .item-about__photos
 
     &__photos {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 30px;
+      margin: 0px -15px;
     }
 
     // .item-about__photo
 
     &__photo {
+      flex: 1 1 50%;
+      padding: 0px 15px;
       // .item-about__photo_big
-
       &_big {
       }
     }
@@ -156,6 +169,7 @@ body {
     // .item-about__image
 
     &__image {
+      max-width: 100%;
     }
   }
 }
