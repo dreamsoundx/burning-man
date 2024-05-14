@@ -4,7 +4,7 @@
 &subset=cyrillic-ext 
 */
 @import url("https://fonts.googleapis.com/css?family=Anton:400&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&display=swap");
 /* ОБНУЛЕНИЕ СТИЛЕЙ */
 *,
 *::before,
@@ -121,7 +121,7 @@ body {
 }
 
 .about__content {
-  padding: 113px 0px 113px 0px;
+  padding: 124px 0px 113px 0px;
 }
 .about__title {
   font-family: "Anton", sans-serif;
@@ -129,7 +129,7 @@ body {
   text-transform: uppercase;
 }
 .about__title:not(:last-child) {
-  margin-bottom: 56px;
+  margin-bottom: 76px;
 }
 .about .about__items {
   display: -webkit-box;
@@ -145,11 +145,32 @@ body {
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
   padding: 0px 15px;
+  min-width: 320px;
+}
+.about .item-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about .item-about__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.about .item-about__body:not(:last-child) {
+  margin-bottom: 76px;
 }
 .about .item-about__title {
   font-family: "Anton", sans-serif;
   font-size: 25px;
   text-transform: uppercase;
+}
+.about .item-about__title:not(:last-child) {
+  margin-bottom: 37px;
 }
 .about .item-about__text {
   line-height: 163%;

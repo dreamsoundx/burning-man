@@ -3,7 +3,7 @@
 &subset=cyrillic-ext 
 */
 @import url('https://fonts.googleapis.com/css?family=Anton:400&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400&display=swap&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400&display=swap');
 @import '_null';
 
 html {
@@ -96,7 +96,7 @@ body {
   // .about__content
 
   &__content {
-    padding: 113px 0px 113px 0px;
+    padding: 124px 0px 113px 0px;
   }
 
   // .about__title
@@ -106,7 +106,7 @@ body {
     font-size: 50px;
     text-transform: uppercase;
     &:not(:last-child) {
-      margin-bottom: 56px;
+      margin-bottom: 76px;
     }
   }
   .about {
@@ -124,12 +124,19 @@ body {
     &__item {
       flex: 1 1 50%;
       padding: 0px 15px;
+      min-width: 320px;
     }
   }
   .item-about {
+    display: flex;
+    flex-direction: column;
     // .item-about__body
 
     &__body {
+      flex: 1 1 auto;
+      &:not(:last-child) {
+        margin-bottom: 76px;
+      }
     }
 
     // .item-about__title
@@ -138,6 +145,9 @@ body {
       font-family: 'Anton', sans-serif;
       font-size: 25px;
       text-transform: uppercase;
+      &:not(:last-child) {
+        margin-bottom: 37px;
+      }
     }
 
     // .item-about__text
@@ -161,6 +171,7 @@ body {
     &__photo {
       flex: 1 1 50%;
       padding: 0px 15px;
+      // min-width: 180px;
       // .item-about__photo_big
       &_big {
       }
